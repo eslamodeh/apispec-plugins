@@ -1,7 +1,4 @@
-try:
-    from pydantic.dataclasses import dataclass
-except ImportError:
-    from dataclasses import dataclass
+from pydantic.dataclasses import dataclass
 from typing import Optional
 
 from apispec_plugins.base.mixin import DataclassSchemaMixin

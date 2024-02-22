@@ -4,5 +4,5 @@ from apispec_plugins.ext.pydantic import BaseModel
 
 
 class Pet(BaseModel):
-    id: Optional[int]
+    id: Optional[int] = None
     name: str

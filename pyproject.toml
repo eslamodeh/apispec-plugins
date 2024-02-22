@@ -8,9 +8,9 @@ readme = "README.rst"
 packages = [
     { include = "*", from = "src" }
 ]
-homepage = ""
-repository = "https://github.com/codectl/apispec-plugins"
-documentation = ""
+homepage = "https://github.com/eslamodeh/apispec-plugins"
+repository = "https://github.com/eslamodeh/apispec-plugins"
+documentation = "https://github.com/eslamodeh/apispec-plugins"
 keywords = [
     "apispec",
     "plugins",
@@ -43,15 +43,15 @@ classifiers = [
 [tool.poetry.dependencies]
 apispec = { extras = ["yaml"], version = "^6.3.0" }
 flask = { version = "^2.1.3", optional = true }
-pydantic = { version = "^1.10.7", optional = true }
-python = "^3.8"
+pydantic = { version = ">=1.10.7,<3.0.0", optional = true }
+python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 apispec = { extras = ["marshmallow", "yaml"], version = "^6.3.0" }
 coverage = "^7.3.0"
 flask = "^2.1.2"
 pre-commit = "^3.3.3"
-pydantic = "^1.10.7"
+pydantic = "^2.5.1"
 pytest = "^7.4.0"
 pytest-mock = "^3.11.1"
 
